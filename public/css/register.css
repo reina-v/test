@@ -1,0 +1,20 @@
+html, body {
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    margin: 80px auto;
+}
+
+.login__title {
+    margin-bottom: 40px;
+}
+
+.register__form-group {
+    margin-bottom: 20px;
+}
+
+.user-register__error-item{
+    text-align: left;
+}

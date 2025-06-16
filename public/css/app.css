@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.login__title {
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Noto Sans JP", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.login__input {
+    width: 100%;
+    padding: 30px 25px;
+    font-size: 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.login__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__button-wrapper {
+    flex: 1;
+}
+
+.login__btn {
+    padding: 14px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    width: 200px;
+}
+
+.login__btn--orange {
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.login__btn--blue {
+    background-color: rgb(13, 223, 234);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.form-control{
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Noto Sans JP", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    width: 100%;
+    max-width: 700px;
+}
+
+.alert__alert--danger{
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Noto Sans JP", sans-serif;
+    margin-top: 25px;
+}

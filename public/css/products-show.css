@@ -1,0 +1,58 @@
+html, body {
+    justify-content: center;
+    display: flex;
+}
+
+.login__title {
+    margin-bottom: 20px;
+}
+
+.register__form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-create__label {
+    width: 150px;
+    font-size: 25px;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.product-create__input-wrapper {
+    font-size: 25px;
+    text-align: left;
+}
+
+.login__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+input[type="file"] {
+    font-size: 18px;
+    padding: 4px 6px;
+    height: 46px;
+    width: 500px;
+}
+
+.register__form-group1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-create__input-wrapper1 {
+    font-size: 23px;
+    text-align: left;
+    word-break: break-word;
+    max-width: 350px;
+}

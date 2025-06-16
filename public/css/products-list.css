@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.list__title {
+    position: absolute;
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Noto Sans JP", sans-serif;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.product-list__header {
+    position: relative;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+.product-list__action{
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.create__btn--orange {
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 25px;
+    border: none;
+    border-radius: 12px;
+}
+
+.product-list__search-row {
+    display: flex;
+    gap: 16px; 
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: center;}
+
+.product-list__search-col{
+    width: 100%;
+    max-width: 230px;
+}
+
+.product-list__input,
+.product-list__select{
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+    max-width: 270px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 150px;
+    box-sizing: border-box;
+}
+
+.button--danger {
+    color: rgb(81, 81, 81);
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button--primary {
+    height: 40px;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(183, 183, 183);
+    color: rgb(100, 100, 100);
+    padding: 0 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.product-list__table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.product-list__table th,
+.product-list__table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-list__table thead {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.d-product-list__pagination .pagination {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.d-product-list__pagination .page-link {
+    display: inline-block;
+    display: flex;
+    padding: 4px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    color: rgb(162, 162, 162);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.d-product-list__pagination .pagination li {
+    display: inline-block;
+}
+
+.d-sm-none {
+    display: none !important;
+}
+
+.d-product-list__pagination .text-muted {
+    display: none !important;
+}
+
+.product-list__table td {
+    padding: 4px;
+}
+
+.product-list__table tr {
+    vertical-align: middle;
+}
+
+.product-list__table img {
+    display: block;
+    margin: 0 auto;
+    max-height: 60px;
+    object-fit: contain;
+}
