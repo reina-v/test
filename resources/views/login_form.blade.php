@@ -9,6 +9,17 @@
         <form  class="login__form" action="{{ route('login') }}" method="post">               
                 @csrf
 
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+                @if ($errors->has('error'))
+                    <div class="alert alert-danger">
+                        {{ $errors->first('error') }}
+                    </div>
+                @endif
+
             <div class="login__form-group">
                 <input
                     type="email"

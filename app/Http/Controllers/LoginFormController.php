@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use App\Http\Requests\LoginRequest;
 
 class LoginFormController extends Controller
 {
@@ -14,19 +15,14 @@ class LoginFormController extends Controller
     }
 
     //ログイン処理
-    public function login(Request $request) {
-
-        $request->validate([
-            'email'    => ['required', 'email'],
-            'password' => ['required'],
-        ]);
+    public function login(LoginRequest $request) {
 
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
 
             //ログイン成功後商品情報一覧画面へ
-            return redirect()->route('products.list')->with('success', '登録が完了しました。');
+            return redirect()->route('products.list');
         }
 
         // エラーメッセージを含めてリダイレクト
@@ -34,5 +30,4 @@ class LoginFormController extends Controller
             'login' => 'メールアドレスまたはパスワードが正しくありません。',
         ])->withInput();
     }
-
 }

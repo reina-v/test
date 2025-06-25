@@ -11,6 +11,12 @@
                 @csrf
                 @method('PUT')
 
+                @if ($errors->has('error'))
+                    <div class="alert alert-danger">
+                        {{ $errors->first('error') }}
+                    </div>
+                @endif
+
                 <div class="register__form-group">
                     <label class="product-create__label">
                         商品ID : {{ $product->id }}

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Company;
+use App\Http\Requests\DeleteProductRequest;
 
 class ProductsListController extends Controller
 {
@@ -19,10 +20,10 @@ class ProductsListController extends Controller
         return view('products_list', compact('products', 'companies'));
     }
     
-    public function destroy($id)
+    public function destroy(DeleteProductRequest $request, $id)
     {
         $product = Product::findOrFail($id); // 該当商品を取得（見つからない場合は404）
-        $product->delete(); // 削除
+        $product->delete();
 
         return redirect()->route('products.list')->with('success', '商品を削除しました');
     }

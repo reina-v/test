@@ -88,7 +88,7 @@ html, body {
 }
 
 input[type="file"] {
-    font-size: 18px;
+    font-size: 10px;
     padding: 4px 6px;
     height: 46px;
     width: 500px;

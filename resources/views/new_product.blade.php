@@ -9,6 +9,17 @@
             <form class="user-register__form" action="{{ route('register.product') }}" method="post" enctype="multipart/form-data">
                 @csrf
 
+                @if ($errors->has('error'))
+                    <div class="alert alert-danger">
+                        {{ $errors->first('error') }}
+                    </div>
+                @endif
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
                 <div class="register__form-group">
                     <label for="product_name" class="product-create__label">
                         商品名 <span class="product-create__required">*</span>

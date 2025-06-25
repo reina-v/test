@@ -7,6 +7,19 @@
         <div class="product-list__header">
             <h1 class="list__title">商品情報一覧画面</h1>
 
+            {{-- メッセージ表示 --}}
+            @if ($errors->has('error'))
+                <div class="alert alert-danger">
+                    {{ $errors->first('error') }}
+                </div>
+            @endif
+
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
             <div class="product-list__action">
                 <button type="button" class="create__btn--orange js-goto-register" data-href="{{ route('register.product') }}">
                     商品新規登録

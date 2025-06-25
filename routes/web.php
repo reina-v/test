@@ -17,7 +17,7 @@ Route::get('/login_form', [App\Http\Controllers\LoginFormController::class, 'sho
 Route::post('/login', [App\Http\Controllers\LoginFormController::class, 'login'])->name('login');
 
 Route::get('/new_user', [App\Http\Controllers\NewUserController::class, 'showForm'])->name('register.form');
-Route::post('/new_user', [App\Http\Controllers\NewUserController::class, 'registerUser'])->name('register.user');
+Route::post('/new_user', [App\Http\Controllers\NewUserController::class, 'store'])->name('register.user');
 
 Route::get('/products_list', [App\Http\Controllers\ProductsListController::class, 'showList'])
     ->middleware('auth')

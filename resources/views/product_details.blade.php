@@ -7,6 +7,12 @@
         <div class="user-register__row">
             <h1 class="login__title">商品情報詳細画面</h1>
  
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
             <div class="register__form-group">
                 <label for="product_name" class="product-create__label">ID</label>
                 <div class="product-create__input-wrapper">
